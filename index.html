@@ -81,12 +81,35 @@ Save Project
 
 <h2>Infill</h2>
 
-<select>
-<option>20%</option>
-<option>50%</option>
-<option>100%</option>
-</select>
+<label>
+Density:
+<span id="infillValue">20%</span>
+</label>
 
+<input 
+type="range"
+id="infillSlider"
+min="0"
+max="100"
+value="20">
+
+
+
+<label>
+Pattern
+</label>
+
+<select>
+
+<option>Gyroid</option>
+<option>Grid</option>
+<option>Lines</option>
+<option>Cubic</option>
+<option>Triangles</option>
+<option>Honeycomb</option>
+<option>Lightning</option>
+
+</select>
 
 
 <button class="slice">
