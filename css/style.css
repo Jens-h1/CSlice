@@ -312,73 +312,59 @@ border-radius:8px;
 
 
 
-/* fake infill previews */
+.patterns{
 
-.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
 
-background-image:
-linear-gradient(#3b82f6 2px,transparent 2px),
-linear-gradient(90deg,#3b82f6 2px,transparent 2px);
+}
 
-background-size:12px 12px;
+
+.pattern{
+
+background:#1e293b;
+
+border:1px solid #334155;
+
+border-radius:10px;
+
+padding:10px;
+
+cursor:pointer;
 
 }
 
 
 
-.lines{
+.pattern img{
 
-background-image:
-repeating-linear-gradient(
-45deg,
-#3b82f6,
-#3b82f6 3px,
-transparent 3px,
-transparent 12px
-);
+width:100%;
 
-}
+height:70px;
 
+object-fit:contain;
 
+background:#0f172a;
 
-.cubic{
-
-background-image:
-linear-gradient(45deg,#3b82f6 2px,transparent 2px);
-
-background-size:15px 15px;
+border-radius:8px;
 
 }
 
 
 
-.honeycomb{
+.pattern span{
 
-background-image:
-radial-gradient(circle,#3b82f6 2px,transparent 3px);
+display:block;
 
-background-size:15px 15px;
-
-}
-
-
-
-.triangle{
-
-background-image:
-linear-gradient(60deg,#3b82f6 2px,transparent 2px);
-
-background-size:20px 20px;
+margin-top:8px;
 
 }
 
 
 
-.gyroid{
+.pattern.selected{
 
-background-image:
-radial-gradient(circle,#3b82f6 2px,transparent 3px);
-
-background-size:10px 10px;
+border:2px solid #2563eb;
 
 }
