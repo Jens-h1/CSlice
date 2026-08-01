@@ -1,9 +1,29 @@
 const slider = document.getElementById("infillSlider");
-const value = document.getElementById("infillValue");
+const number = document.getElementById("infillNumber");
 
 
 slider.oninput = function(){
 
-value.innerHTML = this.value + "%";
+number.textContent = this.value;
 
 };
+
+
+
+const patterns = document.querySelectorAll(".pattern");
+
+
+patterns.forEach(pattern => {
+
+pattern.onclick = function(){
+
+patterns.forEach(p => 
+p.classList.remove("selected")
+);
+
+
+this.classList.add("selected");
+
+};
+
+});
