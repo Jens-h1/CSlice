@@ -7,7 +7,7 @@ box-sizing:border-box;
 
 body{
 
-background:#0f172a;
+background:#0b1120;
 color:white;
 font-family:Arial, sans-serif;
 
@@ -17,13 +17,19 @@ font-family:Arial, sans-serif;
 
 header{
 
+height:80px;
+
 display:flex;
-justify-content:space-between;
+
 align-items:center;
 
-padding:20px 40px;
+justify-content:space-between;
+
+padding:0 30px;
 
 background:#111827;
+
+border-bottom:1px solid #334155;
 
 }
 
@@ -32,10 +38,13 @@ background:#111827;
 .logo{
 
 display:flex;
+
 align-items:center;
+
 gap:12px;
 
-font-size:30px;
+font-size:28px;
+
 font-weight:bold;
 
 color:#3b82f6;
@@ -53,91 +62,9 @@ height:45px;
 
 
 
-nav{
+.top-buttons button{
 
-display:flex;
-gap:25px;
-
-}
-
-
-nav a{
-
-color:white;
-text-decoration:none;
-
-}
-
-
-
-nav a:hover{
-
-color:#3b82f6;
-
-}
-
-
-
-.app{
-
-padding:50px;
-
-text-align:center;
-
-}
-
-
-
-.subtitle{
-
-color:#cbd5e1;
-margin-top:10px;
-
-}
-
-
-
-.workspace{
-
-display:flex;
-gap:30px;
-
-margin-top:40px;
-
-justify-content:center;
-
-}
-
-
-
-.upload-box,
-.preview,
-.settings{
-
-background:#1e293b;
-
-border-radius:20px;
-
-padding:30px;
-
-}
-
-
-
-.upload-box{
-
-width:350px;
-
-border:2px dashed #3b82f6;
-
-}
-
-
-
-.preview{
-
-width:500px;
-height:350px;
+margin-left:10px;
 
 }
 
@@ -145,15 +72,13 @@ height:350px;
 
 button{
 
-margin-top:20px;
-
-padding:15px 35px;
-
 background:#2563eb;
+
+border:none;
 
 color:white;
 
-border:none;
+padding:12px 22px;
 
 border-radius:10px;
 
@@ -171,16 +96,11 @@ background:#1d4ed8;
 
 
 
-.cube{
+.slicer{
 
-width:120px;
-height:120px;
+display:flex;
 
-background:#3b82f6;
-
-margin:80px auto;
-
-border-radius:15px;
+height:calc(100vh - 80px);
 
 }
 
@@ -188,21 +108,25 @@ border-radius:15px;
 
 .settings{
 
-margin:40px auto;
+width:300px;
 
-max-width:400px;
+background:#111827;
 
-text-align:left;
+padding:25px;
+
+border-right:1px solid #334155;
 
 }
 
 
 
-.settings label{
+.settings h2{
 
-display:block;
+font-size:18px;
 
-margin-top:20px;
+margin-top:25px;
+
+margin-bottom:8px;
 
 }
 
@@ -214,14 +138,92 @@ width:100%;
 
 padding:12px;
 
-margin-top:5px;
-
 background:#0f172a;
 
 color:white;
 
+border:1px solid #334155;
+
 border-radius:8px;
 
-border:1px solid #334155;
+}
+
+
+
+.slice{
+
+width:100%;
+
+margin-top:35px;
+
+font-size:18px;
+
+}
+
+
+
+.viewer{
+
+flex:1;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+padding:30px;
+
+}
+
+
+
+.viewer h2{
+
+margin-bottom:20px;
+
+}
+
+
+
+.model{
+
+width:70%;
+
+height:70%;
+
+background:#111827;
+
+border-radius:20px;
+
+border:2px dashed #334155;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+
+
+.model::after{
+
+content:"Drop STL model here";
+
+color:#64748b;
+
+font-size:22px;
+
+}
+
+
+
+.info{
+
+margin-top:20px;
+
+color:#94a3b8;
 
 }
