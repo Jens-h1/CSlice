@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -23,93 +24,30 @@ CSlice
 </div>
 
 
-<nav>
-<a href="#">Home</a>
-<a href="#">Printers</a>
-<a href="#">Profiles</a>
-<a href="#">Docs</a>
-</nav>
+<div class="top-buttons">
+
+<button>
+Open STL
+</button>
+
+<button>
+Save Project
+</button>
+
+</div>
 
 
 </header>
 
 
 
-<main class="app">
+<div class="slicer">
 
 
-<h1>Slice your model</h1>
-
-<p class="subtitle">
-Upload an STL file and prepare it for printing.
-</p>
+<aside class="settings">
 
 
-
-<div class="workspace">
-
-
-
-<div class="upload-box">
-
-<h2>📦 Drop STL here</h2>
-
-<p>
-or
-</p>
-
-
-<button id="uploadButton">
-Choose File
-</button>
-
-
-<input 
-type="file"
-id="fileInput"
-accept=".stl"
-hidden>
-
-
-<p id="fileName">
-No file selected
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="preview">
-
-<h2>3D Preview</h2>
-
-<div class="cube">
-
-</div>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-<div class="settings">
-
-
-<h2>Print Settings</h2>
-
-
-<label>
-Printer
-</label>
+<h2>Printer</h2>
 
 <select>
 <option>Creality K2 Plus</option>
@@ -119,9 +57,7 @@ Printer
 
 
 
-<label>
-Filament
-</label>
+<h2>Filament</h2>
 
 <select>
 <option>PLA</option>
@@ -132,22 +68,66 @@ Filament
 
 
 
-<label>
-Quality
-</label>
+<h2>Quality</h2>
 
 <select>
-<option>Draft</option>
-<option>Standard</option>
-<option>High Quality</option>
+<option>0.20mm Standard</option>
+<option>0.12mm High Quality</option>
+<option>0.28mm Draft</option>
 </select>
 
+
+
+
+<h2>Infill</h2>
+
+<select>
+<option>20%</option>
+<option>50%</option>
+<option>100%</option>
+</select>
+
+
+
+<button class="slice">
+Slice Plate
+</button>
+
+
+
+</aside>
+
+
+
+
+
+<section class="viewer">
+
+
+<h2>3D Preview</h2>
+
+
+<div class="model">
 
 </div>
 
 
 
-</main>
+<div class="info">
+
+<p>
+No model loaded
+</p>
+
+</div>
+
+
+</section>
+
+
+
+</div>
+
 
 
 
