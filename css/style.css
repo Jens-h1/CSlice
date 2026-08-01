@@ -248,3 +248,137 @@ margin-top:15px;
 color:#cbd5e1;
 
 }
+
+.infill-control{
+margin-top:10px;
+}
+
+
+input[type="range"]{
+
+width:100%;
+
+}
+
+
+
+.patterns{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:10px;
+
+margin-top:15px;
+
+}
+
+
+
+.pattern{
+
+background:#1e293b;
+
+border:1px solid #334155;
+
+padding:10px;
+
+font-size:14px;
+
+}
+
+
+
+.pattern.selected{
+
+border:2px solid #2563eb;
+
+}
+
+
+
+.pattern-icon{
+
+height:50px;
+
+margin-bottom:8px;
+
+background:#0f172a;
+
+border-radius:8px;
+
+}
+
+
+
+/* fake infill previews */
+
+.grid{
+
+background-image:
+linear-gradient(#3b82f6 2px,transparent 2px),
+linear-gradient(90deg,#3b82f6 2px,transparent 2px);
+
+background-size:12px 12px;
+
+}
+
+
+
+.lines{
+
+background-image:
+repeating-linear-gradient(
+45deg,
+#3b82f6,
+#3b82f6 3px,
+transparent 3px,
+transparent 12px
+);
+
+}
+
+
+
+.cubic{
+
+background-image:
+linear-gradient(45deg,#3b82f6 2px,transparent 2px);
+
+background-size:15px 15px;
+
+}
+
+
+
+.honeycomb{
+
+background-image:
+radial-gradient(circle,#3b82f6 2px,transparent 3px);
+
+background-size:15px 15px;
+
+}
+
+
+
+.triangle{
+
+background-image:
+linear-gradient(60deg,#3b82f6 2px,transparent 2px);
+
+background-size:20px 20px;
+
+}
+
+
+
+.gyroid{
+
+background-image:
+radial-gradient(circle,#3b82f6 2px,transparent 3px);
+
+background-size:10px 10px;
+
+}
