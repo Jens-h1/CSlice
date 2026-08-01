@@ -1,41 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSlice</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CSlice</title>
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
+
+
 <body>
 
+
 <header>
+
 <div class="logo">
-    <img src="assets/logo.svg">
-    CSlice
+<img src="assets/logo.svg">
+CSlice
 </div>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Printers</a>
-        <a href="#">Documentation</a>
-        <a href="#">GitHub</a>
-    </nav>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Printers</a>
+<a href="#">Profiles</a>
+<a href="#">Docs</a>
+</nav>
+
+
 </header>
 
-<section class="hero">
 
-<h1>Free Browser-Based 3D Slicer</h1>
 
-<p>
-Slice your STL files without installing software.
-Built for Chromebooks, Windows, macOS and Linux.
+<main class="app">
+
+
+<h1>Slice your model</h1>
+
+<p class="subtitle">
+Upload an STL file and prepare it for printing.
 </p>
 
-<button id="startButton">Get Started</button>
 
-</section>
+
+<div class="workspace">
+
+
+
+<div class="upload-box">
+
+<h2>📦 Drop STL here</h2>
+
+<p>
+or
+</p>
+
+
+<button id="uploadButton">
+Choose File
+</button>
+
+
+<input 
+type="file"
+id="fileInput"
+accept=".stl"
+hidden>
+
+
+<p id="fileName">
+No file selected
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="preview">
+
+<h2>3D Preview</h2>
+
+<div class="cube">
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="settings">
+
+
+<h2>Print Settings</h2>
+
+
+<label>
+Printer
+</label>
+
+<select>
+<option>Creality K2 Plus</option>
+<option>Bambu Lab X1C</option>
+<option>Prusa MK4</option>
+</select>
+
+
+
+<label>
+Filament
+</label>
+
+<select>
+<option>PLA</option>
+<option>PETG</option>
+<option>ABS</option>
+</select>
+
+
+
+
+<label>
+Quality
+</label>
+
+<select>
+<option>Draft</option>
+<option>Standard</option>
+<option>High Quality</option>
+</select>
+
+
+</div>
+
+
+
+</main>
+
+
 
 <script src="js/app.js"></script>
 
+
 </body>
+
 </html>
