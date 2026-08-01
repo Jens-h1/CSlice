@@ -1,0 +1,13 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+
+<rect width="200" height="200" rx="40" fill="#2563eb"></rect>
+
+<path d="M60 55 L100 35 L140 55 L140 105 L100 125 L60 105 Z" fill="white"></path>
+
+<path d="M80 75 L120 75 L120 95 L80 95 Z" fill="#2563eb"></path>
+
+<text x="100" y="165" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle" fill="white">
+CS
+</text>
+
+</svg>
