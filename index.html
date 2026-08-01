@@ -81,9 +81,11 @@ Save Project
 
 <h2>Infill</h2>
 
+<div class="infill-control">
+
 <label>
 Density:
-<span id="infillValue">20%</span>
+<span id="infillNumber">20</span>%
 </label>
 
 <input 
@@ -93,39 +95,52 @@ min="0"
 max="100"
 value="20">
 
+</div>
 
 
-<label>
-Pattern
-</label>
-
-<select>
-
-<option>Gyroid</option>
-<option>Grid</option>
-<option>Lines</option>
-<option>Cubic</option>
-<option>Triangles</option>
-<option>Honeycomb</option>
-<option>Lightning</option>
-
-</select>
+<label>Pattern</label>
 
 
-<button class="slice">
-Slice Plate
+<div class="patterns">
+
+
+<button class="pattern selected">
+<div class="pattern-icon grid"></div>
+Grid
 </button>
 
 
+<button class="pattern">
+<div class="pattern-icon lines"></div>
+Lines
+</button>
 
-</aside>
+
+<button class="pattern">
+<div class="pattern-icon gyroid"></div>
+Gyroid
+</button>
 
 
+<button class="pattern">
+<div class="pattern-icon cubic"></div>
+Cubic
+</button>
 
 
+<button class="pattern">
+<div class="pattern-icon honeycomb"></div>
+Honeycomb
+</button>
 
-<section class="viewer">
 
+<button class="pattern">
+<div class="pattern-icon triangle"></div>
+Triangles
+</button>
+
+
+</div>
 
 <h2>3D Preview</h2>
 
