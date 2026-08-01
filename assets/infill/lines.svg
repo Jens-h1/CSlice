@@ -1,0 +1,14 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+
+<rect width="100" height="100" fill="#0f172a"/>
+
+<g stroke="#3b82f6" stroke-width="3">
+
+<path d="M-20 100L100 -20"/>
+<path d="M0 120L120 0"/>
+<path d="M20 120L120 20"/>
+<path d="M-40 80L80 -40"/>
+
+</g>
+
+</svg>
