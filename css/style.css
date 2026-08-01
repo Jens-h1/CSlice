@@ -227,3 +227,24 @@ margin-top:20px;
 color:#94a3b8;
 
 }
+
+input[type="range"]{
+
+width:100%;
+
+margin-top:15px;
+
+accent-color:#2563eb;
+
+}
+
+
+label{
+
+display:block;
+
+margin-top:15px;
+
+color:#cbd5e1;
+
+}
