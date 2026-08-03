@@ -1,0 +1,24 @@
+{
+  "family": "PLA",
+  "icon": "🟢",
+  "variants": [
+    {
+      "id": "pla",
+      "name": "PLA",
+      "description": "General-purpose printing material.",
+      "recommendedNozzle": [200, 220],
+      "recommendedBed": [50, 60],
+      "fan": 100,
+      "speed": [100, 300]
+    },
+    {
+      "id": "pla_hs",
+      "name": "PLA HS",
+      "description": "High-speed PLA for modern CoreXY printers.",
+      "recommendedNozzle": [220, 235],
+      "recommendedBed": [55, 65],
+      "fan": 100,
+      "speed": [300, 500]
+    }
+  ]
+}
