@@ -1,0 +1,11 @@
+{
+  "name": "Standard",
+  "layerHeight": 0.2,
+  "walls": 2,
+  "topLayers": 5,
+  "bottomLayers": 5,
+  "infill": {
+    "density": 20,
+    "pattern": "Grid"
+  }
+}
